@@ -1,0 +1,93 @@
+.form {
+    border-color: black;
+    margin-top: 60px;
+  }
+.name {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 15px;
+}
+.input {
+    border-radius: 5px;
+    margin: 15px;
+    font-size: 20px;
+}
+.msgErrors {
+    color: brown;
+    font-weight: 500;
+    font-size: 20px;
+}
+.contenWH {
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.h2input {
+    margin: 6px;
+    font-size: 20px;
+    font-weight: 400;
+}
+.inputWH {
+    border-radius: 5px;
+    font-size: 18px;
+    width: 60px;
+    height: 25px;
+    margin: 5px;
+}
+.contenSelectTemps {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 15px;
+    font-size: 20px;
+  }
+  .optionsTemps {
+    margin-left: 20px;
+    height: 30px;
+    width: 200px;
+    border-radius: 10px;
+  }
+  .optionsTemps:hover {
+    cursor: pointer;
+  }
+  .contenTempsSelects {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .selecttemps{ 
+    margin-bottom: 35px;
+    margin-left: 15px;
+    border-radius: 10px;
+  }
+  .selecttemps:hover {
+    cursor: pointer;
+    background-color: brown;
+  }
+  .selectImage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 22px;
+  } 
+  .inputImage {
+    margin-left: 15px;
+    width: 110px;
+    border-radius: 5px;
+    font-size: 20px;
+  }
+  .buttonSubmit {
+    font-size: 40px;
+    margin: 75px;
+    border-radius: 15px;
+    width: 275px;
+    height: 70px;
+    background-color: darkkhaki;
+  }
+  .buttonSubmit:hover {
+    cursor: pointer;
+    background-color: darkgoldenrod;
+    font-size: 50px;
+  }

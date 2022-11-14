@@ -1,0 +1,82 @@
+.contenNavBar {
+    display: flex;
+    justify-content: center;
+    height: 10vh;
+    align-items: center;
+  }
+.contenCreate {
+    font-size: 20px;
+}
+.divSearch {
+    margin: 15px;
+}
+.inputSearch {
+    border-radius: 5px;
+    width: 100%;
+}
+
+.buttonCreate {
+    border-radius: 10px;
+    background-color: transparent;
+    border-width: 1px;
+    font-size: 15px;
+    width: 100px;
+}
+
+.buttonCreate:hover {
+    cursor: pointer;
+    border-color: black;
+    color: grey;
+}
+
+.contenOrderPrincipal {
+    display: flex;
+    justify-content: start;
+    height: 10vh;
+}
+.selectOrder {
+    margin-top: 15px;
+    font-size: 15px;
+    background-color: transparent;
+    border-color: transparent;
+}
+.selectOrder:hover {
+    cursor: pointer;
+}
+.selectsFilters {
+    margin-top: 15px;
+    font-size: 15px;
+    background-color: transparent;
+    border-color: transparent;
+}
+.selectsFilters:hover {
+    cursor: pointer;
+}
+.contenPaginate {
+  display: flex;
+  flex-direction: column;
+  height: 15vh;
+}
+.contenPaginado{
+    margin: 10px;
+}
+
+.buttonCurrent {
+    border-radius: 8px;
+    border: transparent;
+    background-color: transparent;
+  }
+.contenCards {
+    background-color: bisque;
+}
+.dog {
+    height: 60vh;
+}
+.imageLoading {
+    width: 50vh;
+    position: relative;
+    display: flex;
+    margin-left: 150%;
+    border-radius: 75px;
+    margin-top: -60px;
+  }

@@ -1,0 +1,34 @@
+.imageDetail {
+    height: 300px;
+    margin-top: 30px;
+    border-radius: 30px;
+}
+.contenButtons {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    height: 10vh;
+    align-items: center;
+    border-bottom: inset;
+}
+.buttonHome {
+    font-size: medium;
+}
+.buttonCreate {
+    font-size: smaller;
+    padding: 6px;
+  }
+.h1Card {
+    color: darkgoldenrod;
+    font-family: initial;
+    font-size: 40px;
+  }
+.h3Card {
+    color: darkgoldenrod;
+    font-family: initial;
+    font-size: 12px;
+}
+.contenPrincipal {
+    width: 100%;
+    height: 100vh;
+  }

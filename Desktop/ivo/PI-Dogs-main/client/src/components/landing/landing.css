@@ -1,0 +1,27 @@
+.divLanding {
+    background-image: url("./imgLanding.jpg");
+    overflow: hidden;
+    height: 100vh;
+    background-position: center
+}
+
+.h1Landing {
+    display: flex;
+    justify-content: space-around;
+    color: black;
+}
+
+.buttonLanding {
+    margin-top: 35%;
+    margin-left: 45%;
+    background-color: transparent;
+    border: solid;
+    border-radius: 10px;
+    font-size: 25px;
+    padding: 10px;
+}
+
+.buttonLanding:hover {
+    cursor: pointer;
+    color: bisque;
+}

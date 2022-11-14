@@ -1,0 +1,12 @@
+.numberPaginado {
+  border-radius: 15px;
+  margin: 5px;
+  width: 30px;
+  height: 25px;
+  color: darkgoldenrod;
+  border-color: transparent;
+}
+.numberPaginado:hover {
+    cursor: pointer;
+    color: gray;
+}
