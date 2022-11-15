@@ -54,8 +54,7 @@
 }
 .contenPaginate {
   display: flex;
-  flex-direction: column;
-  height: 15vh;
+  justify-content: center;
 }
 .contenPaginado{
     margin: 10px;
@@ -66,12 +65,10 @@
     border: transparent;
     background-color: transparent;
   }
-.contenCards {
-    background-color: bisque;
-}
-.dog {
+
+/* .dog {
     height: 60vh;
-}
+} */
 .imageLoading {
     width: 50vh;
     position: relative;
@@ -80,3 +77,11 @@
     border-radius: 75px;
     margin-top: -60px;
   }
+  .contenCards {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 100%;
+    justify-content: center;
+  }
+
+ 

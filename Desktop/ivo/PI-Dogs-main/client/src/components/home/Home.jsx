@@ -107,7 +107,7 @@ export default function Home () {
                     <select 
                     onChange={(e) => handleFilterByRazas(e)}
                     className="selectsFilters">
-                        <option disabled selected defaultValue>Razas</option>
+                        <option disabled selected defaultValue>Breeds</option>
                         <option value='dogs'>All</option>
                         <option value='dogs/api'>Existing</option>
                         <option value='dogs/db'>Created</option>  
@@ -145,7 +145,7 @@ export default function Home () {
                     </div> ) 
                     : currentDogs?.map((d) => {
                         return (
-                            <div className="dog">
+                            <div className="cont-card">
                                    <Dog page={currentPage}
                                         id={d.id}
                                         image={d.image}
