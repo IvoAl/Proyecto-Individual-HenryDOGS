@@ -7,24 +7,49 @@
     width: 100%;
     display: flex;
     justify-content: space-around;
-    height: 10vh;
+    height: 15vh;
     align-items: center;
-    border-bottom: inset;
 }
-.buttonHome {
-    font-size: medium;
+.buttonHomeDetail {
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-bottom: 6px;
+    padding-top: 6px;
+    background-color: transparent;
+    border: solid;
+    border-radius: 8px;
+    font-size: 17px;
 }
-.buttonCreate {
-    font-size: smaller;
-    padding: 6px;
-  }
+.buttonHomeDetail:hover {
+    cursor: pointer;
+    color: bisque;
+}
+.buttonCreateDetail {
+    background-color: transparent;
+    border: solid;
+    border-radius: 8px;
+    font-size: 17px;
+    padding: 10px; 
+}
+.buttonCreateDetail:hover {
+    cursor: pointer;
+    color: bisque;
+}
 .h1Card {
-    color: darkgoldenrod;
     font-family: initial;
     font-size: 40px;
   }
 .h3Card {
-    color: darkgoldenrod;
     font-family: initial;
     font-size: 12px;
+}
+.divDetail {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 16px 16px 16px black;
+    max-width: fit-content;
+    border-radius: 15px;
+    margin: auto;
+    padding: 15px;
 }

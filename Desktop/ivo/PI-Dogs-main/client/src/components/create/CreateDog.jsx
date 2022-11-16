@@ -213,135 +213,139 @@ export default function CreateDog () {
 
 
     return (
-        <div className="contenPrincipal">
-            <Link to='/home'>
-                <button>Back to Home</button>
-            </Link>
-            <form onSubmit={(e) => handleSubmit(e)}
-                  className='form' >
-                <div className="name">
-                    <input
-                    className="input"
-                    type='text'
-                    placeholder="Breed name"
-                    name="name"
-                    onChange={(e) => handleName(e)}
-                    ></input>
-                    <p className='msgErrors'>{errors2.name}</p>
-                </div>
+        <div className="contenPrincipalCreate">
+            <div className="headerCreate">
+                <Link to='/home'>
+                    <button className="buttonHomeDetail">Back to Home</button>
+                </Link>
+            </div>
+            <div className="divForm">
+                <form onSubmit={(e) => handleSubmit(e)}
+                    className='form' >
+                    <div className="name">
+                        <input
+                        className="input"
+                        type='text'
+                        placeholder="Breed name"
+                        name="name"
+                        onChange={(e) => handleName(e)}
+                        ></input>
+                        <p className='msgErrors'>{errors2.name}</p>
+                    </div>
 
-                 <div className="name">
-                    <input
-                    className="input"
-                    type='text'
-                    name='lifeSpan'
-                    placeholder="App. life expectancy"
-                    onChange={(e) => handleLifeSpan(e)}
-                    ></input>
-                    <p className='msgErrors'>{errors2.lifeSpan}</p>
-                </div>
+                    <div className="name">
+                        <input
+                        className="input"
+                        type='text'
+                        name='lifeSpan'
+                        placeholder="App. life expectancy"
+                        onChange={(e) => handleLifeSpan(e)}
+                        ></input>
+                        <p className='msgErrors'>{errors2.lifeSpan}</p>
+                    </div>
 
-                <div className="contenWH">
-                        <h2 className="h2input">Weight</h2>
+                    <div className="contenWH">
+                            <h2 className="h2input">Weight</h2>
+                            <input
+                            className="inputWH"
+                            name='weightMin'
+                            placeholder="Min"
+                            onChange={(e) => handleWeight(e)}
+                            ></input>
+                            <input
+                            className="inputWH"
+                            type='number'
+                            name='weightMax'
+                            placeholder="Max"
+                            onChange={(e) => handleWeight(e)}
+                            ></input>
+                            <p className='msgErrors'>{errors2.weight}</p>
+                    </div>
+
+                    <div className="contenWH">
+                        <h2 className="h2input">Height</h2>
                         <input
                         className="inputWH"
-                        name='weightMin'
+                        type='number'
+                        name='heightMin'
                         placeholder="Min"
-                        onChange={(e) => handleWeight(e)}
+                        onChange={(e) => handleHeight(e)}
                         ></input>
                         <input
                         className="inputWH"
                         type='number'
-                        name='weightMax'
+                        name='heightMax'
                         placeholder="Max"
-                        onChange={(e) => handleWeight(e)}
+                        onChange={(e) => handleHeight(e)}
                         ></input>
-                        <p className='msgErrors'>{errors2.weight}</p>
-                </div>
-
-                <div className="contenWH">
-                    <h2 className="h2input">Height</h2>
-                    <input
-                    className="inputWH"
-                    type='number'
-                    name='heightMin'
-                    placeholder="Min"
-                    onChange={(e) => handleHeight(e)}
-                    ></input>
-                    <input
-                    className="inputWH"
-                    type='number'
-                    name='heightMax'
-                    placeholder="Max"
-                    onChange={(e) => handleHeight(e)}
-                    ></input>
-                    <p className='msgErrors'>{errors2.height}</p>
-                </div>
-
-
-                <div>
-                    <div className="contenSelectTemps">
-                        <label>Select temperaments </label>
-                        <select onChange={(e) => handleTemperaments(e)}
-                        className='optionsTemps'>
-                        <option disabled selected defaultValue>...</option>
-                        {
-                            temperaments?.map((temp) => (
-                            <option value={temp} key={temp} 
-                            >
-                            {temp}
-                            </option>
-                        ))
-                        }
-                        </select>
-                        <p className='msgErrors'>{errors2.temperaments}</p>
+                        <p className='msgErrors'>{errors2.height}</p>
                     </div>
-                    <div className="contenTempsSelects">
-                        {
-                        input.temperamentsInput?.map((temp) => {
-                            return (
-                                <input
-                                  className="selecttemps"
-                                  type="button"
-                                  value={temp}
-                                  onClick={(e) => handleRemove(e)}
-                                />
-                        )}) 
-                        }
+
+
+                    <div>
+                        <div className="contenSelectTemps">
+                            <label>Select temperaments </label>
+                            <select onChange={(e) => handleTemperaments(e)}
+                            className='optionsTemps'>
+                            <option disabled selected defaultValue>...</option>
+                            {
+                                temperaments?.map((temp) => (
+                                    <option value={temp} key={temp} 
+                                    >
+                                {temp}
+                                </option>
+                            ))
+                            }
+                            </select>
+                            <p className='msgErrors'>{errors2.temperaments}</p>
+                        </div>
+                        <div className="contenTempsSelects">
+                            {
+                                input.temperamentsInput?.map((temp) => {
+                                    return (
+                                        <input
+                                        className="selecttemps"
+                                        type="button"
+                                        value={temp}
+                                        onClick={(e) => handleRemove(e)}
+                                        />
+                                        )}) 
+                                    }
+                        </div>
                     </div>
-                </div>
 
 
-                <div className="selectImage">
-                    <label>Image </label>
-                    <input
-                    className="inputImage"
-                    type='text'
-                    placeholder='URL...'
-                    onChange={(e) => handleImage(e)} >
-                    </input>
-                    <p className='msgErrors'>{errors2.image}</p>
-                </div>
+                    <div className="selectImage">
+                        <label>Image </label>
+                        <input
+                        className="inputImage"
+                        type='text'
+                        placeholder='URL...'
+                        onChange={(e) => handleImage(e)} >
+                        </input>
+                        <p className='msgErrors'>{errors2.image}</p>
+                    </div>
 
 
-                {   input.name !== '' &&
-                    input.image !== '' &&
-                    input.lifeSpan !== '' &&
-                    input.weightMin !== 0 &&
-                    input.weightMax !== 0 &&
-                    input.heightMin !== 0 &&
-                    input.heightMax !== 0 &&
-                    input.temperamentsInput.length !== 0 &&
-
-                    <button
-                    className="buttonSubmit"
-                    type="submit">
-                    Create Dog
-                    </button>
-                
+                    {   input.name !== '' &&
+                        input.image !== '' &&
+                        input.lifeSpan !== '' &&
+                        input.weightMin !== 0 &&
+                        input.weightMax !== 0 &&
+                        input.heightMin !== 0 &&
+                        input.heightMax !== 0 &&
+                        input.temperamentsInput.length !== 0 &&
+                        
+                        <button
+                        className="buttonSubmit"
+                        type="submit">
+                        Create Dog
+                        </button>
+                    
                 }
 
-            </form>
+                </form>
+            </div>
         </div>
     )
 };  

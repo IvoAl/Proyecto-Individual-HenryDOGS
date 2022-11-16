@@ -16,16 +16,16 @@ const { id } = useParams()
     const details = useSelector((state) => state.dogsDetails)
 
     return (
-        <div className="contenPrincipal">
+        <div>
             <div className="contenButtons">
-                <div className="buttonHome">
+                <div>
                     <Link to='/home'>
-                        <button> Home </button>
+                        <button className="buttonHomeDetail"> Home </button>
                     </Link>
                 </div>
-                <div className="buttonCreate">
+                <div>
                     <Link to='/home/createDog'>
-                        <button> Create new breed </button>
+                        <button className="buttonCreateDetail"> Create new breed </button>
                     </Link>
                 </div>
              </div>
@@ -33,13 +33,15 @@ const { id } = useParams()
                 details?.map(({image, name, lifeSpan, weightMin, weightMax, heightMin, heightMax, temperaments}) => {
                     return (
                         <div>
-                            <img src={image} className="imageDetail"/>
-                            <h1 className="h1Card">{name}</h1>
-                            <div className="h3Card">
-                            <h3>Life Span: {lifeSpan}</h3>
-                            <h3>Weight: Between {weightMin} & {weightMax} Kgs.</h3>
-                            <h3>Height: Between {heightMin} & {heightMax} Cm.</h3>
-                            <h3>Temperaments: {temperaments}</h3>
+                            <div className="divDetail">
+                                <img src={image} className="imageDetail"/>
+                                <h1 className="h1Card">{name}</h1>
+                                <div className="h3Card">
+                                    <h3>Life Span: {lifeSpan}</h3>
+                                    <h3>Weight: Between {weightMin} & {weightMax} Kgs.</h3>
+                                    <h3>Height: Between {heightMin} & {heightMax} Cm.</h3>
+                                    <h3>Temperaments: {temperaments}</h3>
+                                </div>
                             </div>
                         </div>
                     )
